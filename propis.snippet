@@ -32,7 +32,7 @@ Language Version: C# 3.0 or higher</Description>
           get { return _$property$; }
           set
           {
-            if (string.IsNullOrEmpty(_$property$) || _$property$.Equals(value))
+            if (string.IsNullOrEmpty(_$property$) || !_$property$.Equals(value))
             {
               _$property$ = value;
               OnPropertyChanged();
